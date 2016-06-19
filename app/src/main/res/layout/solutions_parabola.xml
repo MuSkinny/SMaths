@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Parabola$Solutions_ParabolaEq">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+>
+        <TextView
+            android:id="@+id/DeltaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif-light"
+            android:layout_centerHorizontal="true"
+            android:text="Delta"
+            android:textColor="#831c20"
+            android:textSize="25dp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/Delta_View"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DeltaTextView"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-light"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/solutions_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Solutions"
+        android:textColor="#831c20"
+        android:textSize="25dp"
+        android:textStyle="bold|normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/solutions_text">
+
+    <LinearLayout
+        android:id="@+id/SSlayout"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/x1View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#000000"
+            android:textSize="20dp"
+             />
+
+        <TextView
+            android:id="@+id/x2View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#000000"
+            android:textSize="20dp"
+             />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fractionView"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Nominator"
+                android:layout_marginTop="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:gravity="center_horizontal"
+                android:maxLength="5" />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:id="@+id/fractionLine"/>
+
+            <TextView
+                android:id="@+id/Denominator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textSlash"
+                android:hint=""
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:maxLength="5" />
+
+
+            <TextView
+                android:id="@+id/Nominator2"
+                android:layout_marginTop="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:gravity="center_horizontal"
+                android:maxLength="5" />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:id="@+id/fractionLine2"/>
+
+            <TextView
+                android:id="@+id/Denominator2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textSlash"
+                android:hint=""
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:maxLength="5" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

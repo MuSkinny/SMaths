@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Parabola">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/equationView"
+        android:hint="y = ax^2 + bx + c"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-light"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/edit_texts"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/equationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/factor_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:hint="factor a"
+            android:fontFamily="sans-serif-light"
+            android:inputType="number|numberSigned|numberDecimal" />
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/factor_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:hint="factor b"
+            android:fontFamily="sans-serif-light"
+            android:inputType="number|numberSigned|numberDecimal" />
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/factor_c"
+            android:fontFamily="sans-serif-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:hint="factor c"
+            android:inputType="number|numberSigned|numberDecimal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/buttons_cc"
+        android:layout_below="@id/edit_texts"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/button_calculator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_texts"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:text="Calc"
+            android:layout_marginRight="30dp"
+            android:layout_weight="0"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/buttoned"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/button_how"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_calculator"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:text="Theory"
+            android:layout_weight="0"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/buttoned"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/button_graph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:layout_weight="0"
+            android:text="Graph"
+            android:layout_marginLeft="30dp"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/buttoned"
+            android:textColor="@color/white"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/buttons_cc"
+        android:text="AC"
+        android:id="@+id/button_canc"
+        android:layout_weight="0"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-light"
+        android:background="@drawable/buttoned"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"/>
+
+
+
+</RelativeLayout>

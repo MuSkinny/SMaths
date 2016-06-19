@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/equation2"
+        android:id="@+id/image2"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/text_viewcalc"
+        android:layout_marginTop="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="It is a second order polynomial equation with 3 coefficients: a, b, c. The solution is given by 2 numbers: x1 and x2"
+        android:textSize="25sp"
+        android:layout_marginTop="10sp"
+        android:textColor="#060606"
+        android:id="@+id/text1How" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The solution is given by the quadratic formula. The depression inside the square root is called discriminant and is denoted by:"
+        android:textColor="#060606"
+        android:id="@+id/textView"
+        android:fontFamily="sans-serif-light"
+        android:textSize="25sp"
+        android:paddingTop="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delta1"
+        android:id="@+id/Delta"
+        android:background="@drawable/text_viewcalc"
+        android:layout_marginTop="15sp"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/textF"
+        android:fontFamily="sans-serif-light"
+        android:layout_height="wrap_content"
+        android:textColor="#060606"
+        android:textSize="25sp"
+        android:text="-Δ>0, there are 2 real roots (solutions).\n-Δ=0, there is one root.\n-Δ&lt;0, there are no real roots."
+        android:layout_marginTop="25sp"/>
+
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="100sp"
+        android:background="@drawable/text_viewcalc"
+        android:id="@+id/formula"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15sp"
+        android:src="@drawable/quadratic_formula_2"
+        />
+
+</LinearLayout>
+
+    </ScrollView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="apps.muskinny.com.smaths">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".List_Function">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Parabola"
+            android:label="Parabola" />
+        <activity
+            android:name=".Parabola$Solutions_ParabolaEq"
+            android:label="Solutions" />
+        <activity
+            android:name=".Parabola$Graphic_Parabola"
+            android:label="Graphic" />
+        <activity
+            android:name=".Parabola$Theory_ParabolaEq"
+            android:label="Theory" />
+        <activity
+            android:name=".Trigonometry"
+            android:label="Trigonometry"
+            />
+    </application>
+
+</manifest>
